@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Event Portal</title>
+    <link rel="stylesheet" href="eventportal.css">
+</head>
+<body>
+    <header>
+        <h1>Community Events</h1>
+        <div class="controls">
+            <input type="text" id="search" placeholder="Search events...">
+            <select id="category-filter">
+                <option value="all">All Categories</option>
+                <option value="music">Music</option>
+                <option value="workshop">Workshop</option>
+                <option value="art">Art</option>
+            </select>
+        </div>
+    </header>
+    
+    <main>
+        <div id="loading-spinner" class="spinner"></div>
+        <div id="events-container" class="events-grid"></div>
+        
+        <form id="registration-form">
+            <h2>Register for Event</h2>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <select id="event-select" required>
+                <option value="">Select Event</option>
+            </select>
+            <button type="submit">Register</button>
+        </form>
+    </main>
+
+    <script src="eventportal.js"></script>
+</body>
+</html>
